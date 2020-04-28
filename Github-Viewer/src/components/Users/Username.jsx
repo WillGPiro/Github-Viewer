@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const User = ({ username }) => (
+const Username = ({ username }) => (
   <header>
     <div>
       <p>{ username }Username</p>
@@ -9,9 +9,9 @@ const User = ({ username }) => (
   </header>
 );
 
-User.propTypes = {
+Username.propTypes = {
   username: PropTypes.string.isRequired,
 };
 
-export default User;
+export default Username;
 
