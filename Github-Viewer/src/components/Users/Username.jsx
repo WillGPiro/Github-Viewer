@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Username = ({ username }) => (
   <header>
     <div>
-      <p>{ username }Username</p>
+      <p>{ username }</p>
     </div>
   </header>
 );
