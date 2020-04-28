@@ -1,9 +1,9 @@
 import React from 'react';
-import User from '../Users/User.js';
+import User from '../Users/User.jsx';
 
 export default function App() {
   return (
-    <User />
+    <User username="shaka2pass"/>
   );
 
 }
