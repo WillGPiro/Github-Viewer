@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User matches a user 1`] = `
+<div>
+  <h3>
+    Name: 
+    monalisa octocat
+  </h3>
+  <div>
+    Followers: 
+    20
+  </div>
+  <div>
+    Following: 
+    20
+  </div>
+  <div>
+    Github Link: 
+    https://api.github.com/users/octocat
+  </div>
+</div>
+`;

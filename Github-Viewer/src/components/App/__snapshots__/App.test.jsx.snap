@@ -2,6 +2,9 @@
 
 exports[`App component renders App 1`] = `
 <User
-  username="shaka2pass"
+  followers="20"
+  following="20"
+  name="monalisa octocat"
+  url="https://api.github.com/users/octocat"
 />
 `;

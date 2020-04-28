@@ -20,9 +20,9 @@ const User = ({ name, followers, following, url }) => (
 
 User.propTypes = {
   name: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  following: PropTypes.number.isRequired,
-  url: PropTypes.number.isRequired, 
+  followers: PropTypes.string.isRequired,
+  following: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired, 
 };
 
 export default User;
