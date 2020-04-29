@@ -3,7 +3,6 @@ import Username from '../components/Users/Username.jsx';
 import UsernameInput from '../components/Users/UsernameInput.jsx';
 import User from '../components/Users/User.jsx';
 import Repos from '../components/Repos/Repos.jsx';
-import Repo from '../components/Repos/Repo.jsx';
 import { fetchUser, fetchRepos } from '../services/github.js';
 
 export default class GithubViewer extends Component {
