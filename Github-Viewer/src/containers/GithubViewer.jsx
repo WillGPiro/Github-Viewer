@@ -4,21 +4,18 @@ import UsernameInput from '../components/Users/UsernameInput.jsx';
 import User from '../components/Users/User.jsx';
 import Repos from '../components/Repos/Repos.jsx';
 import Repo from '../components/Repos/Repo.jsx';
-import { fetchRepos } from '../services/github.js';
+import { fetchUser, fetchRepos } from '../services/github.js';
 
 export default class GithubViewer extends Component {
   state = {
-    username: 'shaka2pass',
-    name: 'monalisa octocat',
-    followers: '20',
-    following: '20',
-    url: 'https://api.github.com/users/octocat',
+    username: '',
+    user: {
+      name: '',
+      followers: 0,
+      following: 0,
+      url: '',
+    },
     repos:[]
-  }
-
-  componentDidMount() {
-    fetchRepos()
-      .then(repos => this.setState({ repos }));
   }
 
  onNameChange = ({ target }) => {
@@ -26,11 +23,18 @@ export default class GithubViewer extends Component {
    this.setState({ username });
  }
 
+ onNameSubmit =() => {
+   fetchUser(this.state.username)
+     .then(user => this.setState({ user }));
+   fetchRepos(this.state.username)
+     .then(repos => this.setState({ repos }));
+ }
+
  render() {
    const { username, name, followers, following, url, repos } = this.state;
    return (
      <>
-       <UsernameInput username={username} onNameChange={this.onNameChange} />
+       <UsernameInput username={username} onNameChange={this.onNameChange} onNameSubmit={this.onNameSubmit}/>
        <Username username={username}/>,
        <User name={name} followers={followers} following={following} url={url} />
        <Repo/>

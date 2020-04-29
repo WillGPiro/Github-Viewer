@@ -7,5 +7,11 @@ exports[`UserName matches a username 1`] = `
     type="text"
     value="shaka2pass"
   />
+  <input
+    name="search"
+    onClick={[Function]}
+    type="button"
+    value="Search"
+  />
 </Fragment>
 `;
