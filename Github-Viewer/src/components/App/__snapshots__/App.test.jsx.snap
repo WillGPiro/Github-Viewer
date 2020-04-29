@@ -3,5 +3,22 @@
 exports[`App component renders App 1`] = `
 <Fragment>
   <GithubViewer />
+  ,
+  <Repos
+    repos={
+      Array [
+        Object {
+          "id": 1,
+          "name": "About-Me-Guessing-Game",
+          "url": "https://api.github.com/repos/Shaka2Pass/About-Me-Guessing-Game",
+        },
+        Object {
+          "id": 2,
+          "name": "auth-lab",
+          "url": "https://api.github.com/repos/Shaka2Pass/auth-lab",
+        },
+      ]
+    }
+  />
 </Fragment>
 `;

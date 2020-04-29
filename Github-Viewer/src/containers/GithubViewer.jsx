@@ -27,7 +27,6 @@ export default class GithubViewer extends Component {
        <Username username={username}/>,
        <User name={name} followers={followers} following={following} url={url} />
        <Repo/>
-       <Repos/>
      </>
    );
  }
