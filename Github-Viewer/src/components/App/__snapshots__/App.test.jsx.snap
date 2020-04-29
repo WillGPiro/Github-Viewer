@@ -2,19 +2,6 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
-  <UsernameInput
-    username="shaka2pass"
-  />
-  <Username
-    username="shaka2pass"
-  />
-  ,
-  <User
-    followers="20"
-    following="20"
-    name="monalisa octocat"
-    url="https://api.github.com/users/octocat"
-  />
-  ,
+  <GithubViewer />
 </Fragment>
 `;
