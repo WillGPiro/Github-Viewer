@@ -31,13 +31,12 @@ export default class GithubViewer extends Component {
  }
 
  render() {
-   const { username, name, followers, following, url, repos } = this.state;
+   const { username, user, repos } = this.state;
    return (
      <>
        <UsernameInput username={username} onNameChange={this.onNameChange} onNameSubmit={this.onNameSubmit}/>
        <Username username={username}/>,
-       <User name={name} followers={followers} following={following} url={url} />
-       <Repo/>
+       <User {...user} />
        <Repos repos={repos} />
      </>
    );
