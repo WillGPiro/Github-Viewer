@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repos matches a snapshot of repos 1`] = `
+<ul>
+  <li
+    key="1"
+  >
+    <Repo
+      id={1}
+      name="About-Me-Guessing-Game"
+      url="https://api.github.com/repos/Shaka2Pass/About-Me-Guessing-Game"
+    />
+  </li>
+  <li
+    key="2"
+  >
+    <Repo
+      id={2}
+      name="auth-lab"
+      url="https://api.github.com/repos/Shaka2Pass/auth-lab"
+    />
+  </li>
+</ul>
+`;

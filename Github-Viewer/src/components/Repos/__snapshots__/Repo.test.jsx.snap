@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repo matches a user 1`] = `
+<div>
+  <div>
+    Name: 
+    shaka2pass
+  </div>
+  <div>
+    Url: 
+    https://github.com/Shaka2Pass/About-Me-Guessing-Game
+  </div>
+</div>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserName matches a username 1`] = `
+<Fragment>
+  <input
+    onChange={[Function]}
+    type="text"
+    value="shaka2pass"
+  />
+  <input
+    name="search"
+    onClick={[Function]}
+    type="button"
+    value="Search"
+  />
+</Fragment>
+`;

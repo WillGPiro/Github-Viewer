@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User matches a user 1`] = `
+<header>
+  <div>
+    <p>
+      shaka2pass
+    </p>
+  </div>
+</header>
+`;
